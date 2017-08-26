@@ -2,38 +2,38 @@
 <html>
 <head>
   <title>Annabelle Sweatpea</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" type="text/css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.js"></script>
 </head>
 <body class="page-template-default">
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn"><a href=""> Characters </a></button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href=""> Players </a>
-      <a href=""> NPC's </a>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Winking Griffon</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Characters</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Weapons</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tomes
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="tomes/playersHandbook.pdf">Player Handbook</a></li>
+            <li><a href="tomes/EE_playersCompanion.pdf">Elemental Evil</a></li>
+            <li><a href="tomes/volos.pdf">Volo's Guide to Monsters</a></li>
+            <li><a href="tomes/artificer.pdf">Artificer</a></li>
+            <li><a href="tomes/mystics.pdf">Mystics</a></li>
+            <li><a href="tomes/poisons.pdf">Guide to Poisons</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </div>
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn"><a href=""> Locations </a></button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href=""> Players </a>
-      <a href=""> NPC's </a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn"><a href=""> Weapons </a></button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href=""> Players </a>
-      <a href=""> NPC's </a>
-    </div>
-  </div>
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn"><a href=""> Story </a></button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href=""> Players </a>
-      <a href=""> NPC's </a>
-    </div>
-  </div>
+  </nav>
   <div id="wrapper" class="article container">
     <div id="container" class="row">
       <div id="main" class="eightcol" role="main">
