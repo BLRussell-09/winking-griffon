@@ -46,16 +46,15 @@
               <div class="character-image">
                 <img class="size-full alignleft" src="annabelle.jpg">
               </div>
-
               <div class="character-desc">
                 An orphan from Pith, Annabelle Sweatpea now travels with Cylia.
                 Destroying her own home, and hanging out with the Adventurers seems to have changed
                 Annabelle a bit. She's always down for a bloody fight, maybe even a little murder.
               </div>
-              </div>
-              <div class="character-bio" style="margin-top: 30px;">
-                <h2>History</h2>
-                <div class="character-hist">
+            </div>
+            <div class="character-bio" style="margin-top: 30px;">
+              <h2>History</h2>
+              <div class="character-hist">
                 Annabelle grew up in the small farm town called <a href="">Pith</a>, where her father
                 owned the tavern, The Winking Griffon. One night, the children began to dissapear leaving
                 no sign of where they had gone or why. Unbeknowst to the town, they were being preyed upon,
@@ -67,14 +66,13 @@
                 eyes as they slayed Jeremy.<br /> After escaping the temple, she found that she had been infected by the Death Practitioner with the Black Blood Tree and was
                 unwittingly used a suicide bomber. She was rescued by Cylia, and now she travels with her as they complete missions
                 for the Order of Doors.
-
+              </div>
             </div>
-          </div>
-      </article>
-    </div>
+          </article>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </div>
 <div class="dice-bar">
   <table>
@@ -86,21 +84,64 @@
     </thead>
     <tbody>
       <tr>
-        <th><button id="button">D6</button>
-        <script src="dice.js"></script>
-        </th>
-        <td><p id="placeholder">
-        </p></td>
+        <td>
+          <button class="dice-roll" onclick="rollDatDice(4, 'd4')">D4</button>
+        </td>
+        <td class="dice-result">
+          <input class="dice-input" type='text' id="d4">
+        </td>
       </tr>
       <tr>
-        <th><button id="noobish">D10</button>
-        <script src="10.js"></script>
-        </th>
-        <td><p id="krakra">
-        </p></td>
-    </tr>
+        <td>
+          <button class="dice-roll" onclick="rollDatDice(6, 'd6')">D6</button>
+        </td>
+        <td class="dice-result">
+          <input class="dice-input" type='text' id="d6">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="dice-roll" onclick="rollDatDice(8, 'd8')">D8</button>
+        </td>
+        <td class="dice-result">
+          <input class="dice-input" type='text' id="d8">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="dice-roll" onclick="rollDatDice(10, 'd10')">D10</button>
+        </td>
+        <td class="dice-result">
+          <input class="dice-input" type='text' id="d10">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="dice-roll" onclick="rollDatDice(12, 'd12')">D12</button>
+        </td>
+        <td class="dice-result">
+          <input class="dice-input" type='text' id="d12">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="dice-roll" onclick="rollDatDice(20, 'd20')">D20</button>
+        </td>
+        <td class="dice-result">
+          <input class="dice-input" type='text' id="d20">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="dice-roll" onclick="rollDatDice(100, 'd100')">D100</button>
+        </td>
+        <td class="dice-result">
+          <input class="dice-input" type='text' id="d100">
+        </td>
+      </tr>
     </tbody>
-</table>
+  </table>
 </div>
 </body>
+<script src="dice.js"></script>
 </html>
